@@ -53,4 +53,9 @@ playlist_c = (
   # 4 commit (libraries)
 import random as rn
 from typing import Iterable, Any
-
+# 5 commit (main func)
+def get_duration(playlist: Iterable, n: int) -> Any:
+    if type(playlist) == tuple:
+        return get_time_tuple(playlist, n)
+    elif type(playlist) == list:
+        return get_time_list(playlist, n)
