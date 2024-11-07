@@ -72,3 +72,15 @@ def get_time_tuple(playlist, n):
     for _ in range(n):
         time += float(rn.choice(playlist)[-4:])
     return time
+# 8 commit (func call)
+choose_playlist = input('''Введите цифру вашего плейлиста: 
+1. playlist_a (list)
+2. playlist_c (tuple)
+ - ''')
+
+numb = int(input('Введите параметр n - '))
+
+if choose_playlist == '1':
+    print(get_duration(playlist_a, numb))
+else:
+    print(get_duration(playlist_c, numb))
