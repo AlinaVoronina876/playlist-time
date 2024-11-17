@@ -32,3 +32,19 @@ playlist_a = [
     ['Nowhere to Run', 2.58],
     ['In This World', 4.02],
     ]
+# 3 commit (add tuple playlist_c)
+playlist_c = (
+    "Happy Nation; 3.32",
+    "It's My Life; 3.59",
+    "Lady(Hear Me Tonight); 5.07",
+    "Fields Of Gold; 3.38",
+    "The Winner Takes It All; 4.54",
+    "Self Control; 4.06",
+    "I Shot The Sheriff; 4.57",
+    "Don't Give Up; 6.34",
+    "Relax, Take It Easy; 4.30",
+    "Dancing Queen; 3.36",
+)
+
+
+#----------------------------------------------------MAIN-----------------------------------------------------------------
