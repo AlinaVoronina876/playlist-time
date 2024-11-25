@@ -74,4 +74,14 @@ def get_duration(playlist: Iterable, n: int) -> Any:
         return get_time_list(playlist, n)
 
  # 8 commit (func call)
-print(get_duration(playlist_c, 230))
+choose_playlist = input('''Введите цифру вашего плейлиста: 
+1. playlist_a (list)
+2. playlist_c (tuple)
+ - ''')
+
+numb = int(input('Введите параметр n - '))
+
+if choose_playlist == '1':
+    print(get_duration(playlist_a, numb))
+else:
+    print(get_duration(playlist_c, numb))
