@@ -58,3 +58,10 @@ def get_time_list(playlist, n):
     for _ in range(n):
         time += (rn.choice(playlist))[1]
     return time
+
+ # 6 commit (add func get_time_tuple)
+def get_time_tuple(playlist, n):
+    time = 0
+    for _ in range(n):
+        time += float(rn.choice(playlist)[-4:])
+    return time
