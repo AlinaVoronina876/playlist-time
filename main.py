@@ -65,3 +65,10 @@ def get_time_tuple(playlist, n):
     for _ in range(n):
         time += float(rn.choice(playlist)[-4:])
     return time
+
+  # 7 commit (main func)
+def get_duration(playlist: Iterable, n: int) -> Any:
+    if type(playlist) == tuple:
+        return get_time_tuple(playlist, n)
+    elif type(playlist) == list:
+        return get_time_list(playlist, n)
