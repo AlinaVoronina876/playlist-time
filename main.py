@@ -51,3 +51,10 @@ playlist_c = (
   # 4 commit (libraries)
 import random as rn
 from typing import Iterable, Any
+
+  # 5 commit (add func get_time_list)
+def get_time_list(playlist, n):
+    time = 0
+    for _ in range(n):
+        time += (rn.choice(playlist))[1]
+    return time
