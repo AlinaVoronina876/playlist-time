@@ -72,3 +72,6 @@ def get_duration(playlist: Iterable, n: int) -> Any:
         return get_time_tuple(playlist, n)
     elif type(playlist) == list:
         return get_time_list(playlist, n)
+
+ # 8 commit (func call)
+print(get_duration(playlist_c, 230))
